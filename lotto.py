@@ -2,7 +2,7 @@ import random
 
 def lotto_game():
     sorsolt_szamok = []
-    megadott_szamok =[]
+    megadott_szamok = []
     x = 0
     print("Szevasz testvír! Látom szerencsejáték függő vagy. Sok sikert!")
     while x < 5:
@@ -18,7 +18,8 @@ def lotto_game():
         sorsolt_szamok.append(gep_szamai) 
     print(sorsolt_szamok)
     
-    talalatok_szama = megadott_szamok.intersection(sorsolt_szamok)
-
-    print("Találatok száma:", talalatok_szama)
+    talalatok = 0
+    if megadott_szamok in sorsolt_szamok:
+        talalatok + 1 
+    print(talalatok)
 lotto_game()
