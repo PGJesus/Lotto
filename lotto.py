@@ -3,16 +3,19 @@ import random
 def lotto_game():
     sorsolt_szamok = []
     megadott_szamok =[]
+    x = 0
     print("Szevasz testvír! Látom szerencsejáték függő vagy. Sok sikert!")
-    for i in range(0,5):
+    while x < 5:
         jatekos_szamai = int(input("Mondj öt különböző számot!"))
-        megadott_szamok.append(jatekos_szamai)
+        if jatekos_szamai in megadott_szamok:
+            print("Már megadtad ezt a számot.")
+        else:
+            megadott_szamok.append(jatekos_szamai)
+            x += 1    
     print(megadott_szamok)
-        # if :
-        #     print("Már megadtad ezt a számot bazzeg há nem tudsz olvasni")
     for i in range(0, 5):
         gep_szamai = random.randint(1, 90)
-        sorsolt_szamok.append(gep_szamai)
+        sorsolt_szamok.append(gep_szamai) 
     print(sorsolt_szamok)
     
     
