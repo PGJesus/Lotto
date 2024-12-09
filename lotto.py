@@ -7,7 +7,7 @@ def lotto_game():
     
     while len(megadott_szamok) < 5:
         try:
-            jatekos_szamai = int(input(f"Adj meg egy számot (1-90), eddigiek: {megadott_szamok}: "))
+            jatekos_szamai = int(input(f"Adj meg egy számot 90-ig, eddigiek: {megadott_szamok}: "))
             if jatekos_szamai < 1 or jatekos_szamai > 90:
                 print("A számnak 1 és 90 között kell lennie!")
             elif jatekos_szamai in megadott_szamok:
