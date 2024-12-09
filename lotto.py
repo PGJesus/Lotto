@@ -20,6 +20,6 @@ def lotto_game():
     
     talalatok = 0
     if megadott_szamok in sorsolt_szamok:
-        talalatok + 1 
+        talalatok + 1
     print(talalatok)
 lotto_game()
