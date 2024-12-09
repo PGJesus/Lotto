@@ -18,5 +18,7 @@ def lotto_game():
         sorsolt_szamok.append(gep_szamai) 
     print(sorsolt_szamok)
     
-    
+    talalatok_szama = megadott_szamok.intersection(sorsolt_szamok)
+
+    print("Találatok száma:", talalatok_szama)
 lotto_game()
